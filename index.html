@@ -1,0 +1,844 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover exceptional luxury accommodation, boutique hotels and premium holiday stays with LUXESTAY.">
+
+    <meta name="theme-color" content="#171717">
+
+    <title>LUXESTAY | Stay Somewhere Extraordinary</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         01. NAVIGATION
+    ========================================== -->
+
+    <header class="site-header" id="home">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                LUXE<span>STAY</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+
+                <a href="#destinations" class="nav-link">Destinations</a>
+
+                <a href="#stays" class="nav-link">Our Stays</a>
+
+                <a href="#experiences" class="nav-link">Experiences</a>
+
+                <a href="#about" class="nav-link">About Us</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="#booking" class="nav-cta">
+                    Reserve Your Stay
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             02. HERO SECTION
+        ========================================== -->
+
+        <section class="hero-section">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+
+                <span class="eyebrow hero-eyebrow">
+                    THE ART OF EXCEPTIONAL STAYS
+                </span>
+
+                <h1>
+                    Stay Somewhere
+                    <span>Extraordinary.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover exceptional places to stay,
+                    thoughtfully selected for unforgettable
+                    experiences.
+                </p>
+
+                <a href="#booking" class="hero-button">
+                    Discover Your Stay
+                    <span>&rarr;</span>
+                </a>
+
+            </div>
+
+
+            <!-- BOOKING SEARCH -->
+
+            <div class="booking-wrapper container" id="booking">
+
+                <form class="booking-form" id="booking-form">
+
+                    <div class="booking-field">
+
+                        <label for="destination">DESTINATION</label>
+
+                        <select id="destination" name="destination" required>
+
+                            <option value="">Where are you going?</option>
+
+                            <option value="Cape Town">Cape Town</option>
+
+                            <option value="Johannesburg">Johannesburg</option>
+
+                            <option value="Mauritius">Mauritius</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="booking-field">
+
+                        <label for="checkin">CHECK-IN</label>
+
+                        <input
+                            type="date"
+                            id="checkin"
+                            name="checkin"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="booking-field">
+
+                        <label for="checkout">CHECK-OUT</label>
+
+                        <input
+                            type="date"
+                            id="checkout"
+                            name="checkout"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="booking-field">
+
+                        <label for="guests">GUESTS</label>
+
+                        <select id="guests" name="guests" required>
+
+                            <option value="1">1 Guest</option>
+
+                            <option value="2" selected>2 Guests</option>
+
+                            <option value="3">3 Guests</option>
+
+                            <option value="4">4 Guests</option>
+
+                            <option value="5">5 Guests</option>
+
+                            <option value="6">6+ Guests</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit" class="booking-button">
+                        Explore Stays
+                        <span>&rarr;</span>
+                    </button>
+
+                </form>
+
+                <p class="booking-feedback" id="booking-feedback" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             03. FEATURED DESTINATIONS
+        ========================================== -->
+
+        <section class="destinations-section section-padding" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">EXPLORE THE WORLD</span>
+
+                        <h2>
+                            Destinations Worth
+                            <span>Discovering.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        From breathtaking coastlines to vibrant
+                        city escapes, discover destinations
+                        selected for extraordinary experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="destination-grid">
+
+
+                    <!-- CAPE TOWN -->
+
+                    <article class="destination-card destination-large">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1200&q=85"
+                            alt="Scenic Cape Town coastline and Table Mountain"
+                            loading="lazy"
+                        >
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-content">
+
+                            <span>COASTAL ESCAPES</span>
+
+                            <h3>Cape Town</h3>
+
+                            <a href="#stays" class="text-link">
+                                Explore Destination &rarr;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOHANNESBURG -->
+
+                    <article class="destination-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85"
+                            alt="Contemporary city skyline"
+                            loading="lazy"
+                        >
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-content">
+
+                            <span>URBAN LUXURY</span>
+
+                            <h3>Johannesburg</h3>
+
+                            <a href="#stays" class="text-link">
+                                Explore Destination &rarr;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MAURITIUS -->
+
+                    <article class="destination-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85"
+                            alt="Tropical island paradise with turquoise water"
+                            loading="lazy"
+                        >
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-content">
+
+                            <span>ISLAND RETREATS</span>
+
+                            <h3>Mauritius</h3>
+
+                            <a href="#stays" class="text-link">
+                                Explore Destination &rarr;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             04. SIGNATURE COLLECTION
+        ========================================== -->
+
+        <section class="stays-section section-padding" id="stays">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">THE LUXESTAY COLLECTION</span>
+
+                        <h2>
+                            Exceptional Stays.
+                            <span>Remarkable Moments.</span>
+                        </h2>
+
+                    </div>
+
+                    <a href="properties.html" class="outline-button">
+                        View All Stays &rarr;
+                    </a>
+
+                </div>
+
+
+                <div class="stays-grid">
+
+
+                    <!-- PROPERTY 01 -->
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85"
+                                alt="Luxury beachfront hotel swimming pool"
+                                loading="lazy"
+                            >
+
+                            <span class="stay-tag">
+                                SIGNATURE COLLECTION
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                type="button"
+                                aria-label="Save Oceanview Luxury Suite"
+                            >
+                                &#9825;
+                            </button>
+
+                        </div>
+
+
+                        <div class="stay-details">
+
+                            <div class="stay-location">
+                                CAPE TOWN, SOUTH AFRICA
+                            </div>
+
+                            <h3>Oceanview Luxury Suite</h3>
+
+                            <p>
+                                A private coastal escape with
+                                breathtaking ocean views and
+                                exceptional comfort.
+                            </p>
+
+                            <div class="stay-bottom">
+
+                                <div class="stay-price">
+
+                                    <strong>R3,850</strong>
+
+                                    <span>/ night</span>
+
+                                </div>
+
+                                <a href="property-details.html?id=oceanview" class="details-link">
+                                    View Details &rarr;
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 02 -->
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+                                alt="Elegant contemporary luxury apartment interior"
+                                loading="lazy"
+                            >
+
+                            <span class="stay-tag">
+                                CITY COLLECTION
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                type="button"
+                                aria-label="Save Contemporary City Residence"
+                            >
+                                &#9825;
+                            </button>
+
+                        </div>
+
+
+                        <div class="stay-details">
+
+                            <div class="stay-location">
+                                JOHANNESBURG, SOUTH AFRICA
+                            </div>
+
+                            <h3>Contemporary City Residence</h3>
+
+                            <p>
+                                Modern architecture, refined interiors
+                                and convenient access to the city.
+                            </p>
+
+                            <div class="stay-bottom">
+
+                                <div class="stay-price">
+
+                                    <strong>R2,650</strong>
+
+                                    <span>/ night</span>
+
+                                </div>
+
+                                <a href="property-details.html?id=city-residence" class="details-link">
+                                    View Details &rarr;
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 03 -->
+
+                    <article class="stay-card">
+
+                        <div class="stay-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=85"
+                                alt="Private luxury tropical villa with swimming pool"
+                                loading="lazy"
+                            >
+
+                            <span class="stay-tag">
+                                PRIVATE COLLECTION
+                            </span>
+
+                            <button
+                                class="wishlist-button"
+                                type="button"
+                                aria-label="Save Private Garden Villa"
+                            >
+                                &#9825;
+                            </button>
+
+                        </div>
+
+
+                        <div class="stay-details">
+
+                            <div class="stay-location">
+                                MAURITIUS
+                            </div>
+
+                            <h3>Private Garden Villa</h3>
+
+                            <p>
+                                An intimate tropical sanctuary
+                                surrounded by beautiful gardens
+                                and tranquil scenery.
+                            </p>
+
+                            <div class="stay-bottom">
+
+                                <div class="stay-price">
+
+                                    <strong>R5,200</strong>
+
+                                    <span>/ night</span>
+
+                                </div>
+
+                                <a href="property-details.html?id=garden-villa" class="details-link">
+                                    View Details &rarr;
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             05. WHY LUXESTAY
+        ========================================== -->
+
+        <section class="benefits-section section-padding" id="about">
+
+            <div class="container">
+
+                <div class="benefits-heading">
+
+                    <span class="eyebrow">THE LUXESTAY DIFFERENCE</span>
+
+                    <h2>
+                        Every Detail.
+                        <span>Considered.</span>
+                    </h2>
+
+                    <p>
+                        We believe exceptional travel begins with
+                        exceptional accommodation. Every stay is
+                        selected with your experience in mind.
+                    </p>
+
+                </div>
+
+
+                <div class="benefits-grid">
+
+
+                    <article class="benefit-card">
+
+                        <div class="benefit-icon">
+                            &#10022;
+                        </div>
+
+                        <h3>Carefully Selected Stays</h3>
+
+                        <p>
+                            Discover thoughtfully selected
+                            properties that meet our standards
+                            for quality and character.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <div class="benefit-icon">
+                            &#9832;
+                        </div>
+
+                        <h3>Exceptional Comfort</h3>
+
+                        <p>
+                            Enjoy beautiful spaces, considered
+                            details and accommodation designed
+                            around your comfort.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <div class="benefit-icon">
+                            &#10003;
+                        </div>
+
+                        <h3>Seamless Reservations</h3>
+
+                        <p>
+                            Explore your options and move through
+                            the reservation journey with clarity
+                            and convenience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <div class="benefit-icon">
+                            &#9829;
+                        </div>
+
+                        <h3>Dedicated Guest Support</h3>
+
+                        <p>
+                            Our guest support experience is
+                            designed to make every part of
+                            your journey feel effortless.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             06. EXPERIENCE SECTION
+        ========================================== -->
+
+        <section class="experience-section" id="experiences">
+
+            <div class="experience-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85"
+                    alt="Beautifully designed luxury hospitality interior"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="experience-content">
+
+                <span class="eyebrow">
+                    BEYOND THE ORDINARY
+                </span>
+
+                <h2>
+                    More Than Accommodation.
+                    <span>An Experience.</span>
+                </h2>
+
+                <p>
+                    The finest journeys are defined by the moments
+                    in between. Wake up somewhere beautiful,
+                    discover new surroundings and enjoy the
+                    luxury of feeling completely at home.
+                </p>
+
+                <a href="experiences.html" class="dark-button">
+                    Discover the Experience &rarr;
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             07. FINAL CALL TO ACTION
+        ========================================== -->
+
+        <section class="final-cta-section">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    YOUR NEXT CHAPTER STARTS HERE
+                </span>
+
+                <h2>
+                    Your Next Extraordinary
+                    Stay Begins Here.
+                </h2>
+
+                <p>
+                    Find a place that inspires you.
+                    Make your next journey unforgettable.
+                </p>
+
+                <a href="#booking" class="gold-button">
+                    Explore Available Stays &rarr;
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         08. FOOTER
+    ========================================== -->
+
+    <footer class="site-footer" id="contact">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo footer-logo">
+                        LUXE<span>STAY</span>
+                    </a>
+
+                    <p>
+                        Exceptional places.
+                        Thoughtfully selected.
+                        Extraordinary experiences.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Instagram">IG</a>
+
+                        <a href="#" aria-label="Facebook">FB</a>
+
+                        <a href="#" aria-label="Pinterest">PI</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+
+                <div class="footer-column">
+
+                    <h3>Explore</h3>
+
+                    <a href="#destinations">Destinations</a>
+
+                    <a href="#stays">Our Stays</a>
+
+                    <a href="#experiences">Experiences</a>
+
+                    <a href="#about">About Us</a>
+
+                </div>
+
+
+                <!-- SUPPORT -->
+
+                <div class="footer-column">
+
+                    <h3>Guest Support</h3>
+
+                    <a href="#contact">Contact Us</a>
+
+                    <a href="faq.html">Frequently Asked Questions</a>
+
+                    <a href="booking-policy.html">Booking Policy</a>
+
+                    <a href="cancellation.html">Cancellation Policy</a>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-column">
+
+                    <h3>Get In Touch</h3>
+
+                    <a href="mailto:hello@luxestay.example">
+                        hello@luxestay.example
+                    </a>
+
+                    <a href="tel:+27000000000">
+                        +27 00 000 0000
+                    </a>
+
+                    <span>Johannesburg, South Africa</span>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="current-year">2026</span>
+                    LUXESTAY. All rights reserved.
+                </p>
+
+                <div class="footer-legal">
+
+                    <a href="privacy.html">Privacy Policy</a>
+
+                    <a href="terms.html">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
